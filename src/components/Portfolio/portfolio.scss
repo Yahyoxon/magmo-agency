@@ -1,0 +1,84 @@
+@mixin media($mw: 1200px) {
+    @media screen and (max-width: $mw) {
+        @content;
+    }
+}
+
+@font-face {
+    font-family: Circe;
+    src: url(../../fonts/Circe/circe.ttf);
+}
+
+.portfolio-section {
+    font-family: Circe;
+    max-width: 100%;
+
+    .double-column {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+}
+
+.keysContainer {
+    width: 50%;
+    min-height: 500px;
+    
+    padding: 60px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        transition-duration: 0.4s;
+    }
+
+    .text-keys {
+        .keys-type {
+            font-size: 18px;
+            font-weight: 500;
+            color: rgba(240, 240, 240, 0.616);
+        }
+
+        .keys-title {
+            font-family: Circe;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 42px;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .keys-desc {
+            margin-top: 60px;
+            font-family: Circe;
+            font-size: 14px;
+            line-height: 21px;
+            color: #fff;
+        }
+    }
+
+    .keysPhoto {
+        max-width: 500px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.col1 {
+    background: linear-gradient(314.91deg, #57941A -5.38%, #5DC837 105.7%), #c4c4c4;
+}
+
+.col2 {
+    background: linear-gradient(98.5deg, #DF252C 7.05%, #DF252C 7.05%, #C50B12 104.42%);
+}
+
+.col3 {
+    background: linear-gradient(276.6deg, #0B83FE 5.72%, #274DDC 105.98%);
+}
+.col4{
+    background: #f9c70c;
+}

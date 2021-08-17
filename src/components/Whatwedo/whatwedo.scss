@@ -1,0 +1,100 @@
+@mixin media($mw: 1200px) {
+    @media screen and (max-width: $mw) {
+        @content;
+    }
+}
+
+@font-face {
+    font-family: Circe;
+    src: url(../../fonts/Circe/circe.ttf);
+}
+
+.What-we-do-Section {
+    font-family: Circe;
+    background: url("../../assets/b7b853erwe3867243396a535.jpg");
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+
+    .section1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .what-title {
+            padding-bottom: 100px;
+
+            h2 {
+                font-size: 72px;
+                font-weight: 700;
+            }
+        }
+
+        .description {
+            font-size: 24px;
+            font-weight: 400px;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.battin {
+    font-size: 18px;
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 25px;
+    outline: none;
+    transition: 0.2s;
+    margin-top: 50px;
+    font-weight: 400;
+    &:hover{
+        background: rgb(67, 130, 246);
+    }
+}
+
+.button1 {
+    background: none;
+    color: #fff;
+    background: transparent;
+
+}
+
+.button2 {
+    background: rgba(11, 131, 254, .3);
+    color: #fff;
+    background: transparent;
+    transition: 0.2s;
+    margin-left: 30px;
+}
+
+.section2 {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 50px 80px;
+
+    .uslug-title {
+
+        h3 {
+            font-size: 36px;
+            font-family: Circe;
+            color: #0a84ff;
+            font-weight: bold;
+            &:hover{
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .uslugi-feature {
+        ul {
+            li {
+                font-family: Circe;
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,5 +1,62 @@
-.mainHeader{
-    position: relative;
-    z-index: 9999;
-    padding: 20px 0;
-}
+  @mixin media($mw: 1200px) {
+      @media screen and (max-width: $mw) {
+          @content;
+      }
+  }
+
+  .mainHeader {
+      position: fixed;
+      width: 100%;
+      z-index: 9999;
+      padding: 15px 0;
+      background: rgba(0, 0, 0, 0.192);
+
+      .navbarSection {
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+
+
+          ul {
+              width: 100%;
+              margin: 0;
+              display: flex;
+              justify-content: space-between;
+              flex-direction: row;
+              align-items: center;
+
+              @include media(550px) {
+                  display: none;
+
+                  &.active {
+                      display: flex;
+                      position: absolute;
+                      top: 0;
+                      padding: 300px 20px;
+                      background: #000;
+                      height: 100vh;
+                      flex-direction: column;
+                  }
+              }
+
+              li {
+                  list-style: none;
+
+                  a {
+                      text-decoration: none;
+                      color: white;
+                      padding: 10px;
+                  }
+              }
+          }
+      }
+
+      .phoneNumBox {
+          height: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+      }
+  }

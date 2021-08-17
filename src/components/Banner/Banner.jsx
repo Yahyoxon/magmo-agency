@@ -8,7 +8,7 @@ const Banner = () => {
         <Row>
           <Col>
           <div className="mainOfSection">
-          dqwdqwdq
+          
           </div>
           
           </Col>

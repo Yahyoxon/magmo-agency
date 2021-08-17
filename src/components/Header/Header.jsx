@@ -1,17 +1,15 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import "./header.scss";
-import logo from '../../assets/magmo-agency logo.png'
+import logo from '../../assets/test-logo.png'
 const Header = () => {
   return (
     <div className="mainHeader">
       <Navbar bg="transparent" variant="dark">
-        <Container>
+        <Container >
           <Navbar.Brand >
             <img
               src={logo}
-              width="155px"
-              height="100px"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
